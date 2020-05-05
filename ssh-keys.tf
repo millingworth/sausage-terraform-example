@@ -1,0 +1,4 @@
+resource "openstack_compute_keypair_v2" "matt_illingworth_key" {
+  name       = "Matt Illingworth"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZIV98YFCbCTwB5VKahUsT0pmWuhp/posTRWaX98DNXRgdeLb0LoaINmZK1EtVWZFj9I7TRif3KOiZ2yvLmCiHaGYT5bQTfbaUbZ0fHEyNWymLHJ2tyjVyS9iTFqUBNieOs0WPmI+IIdEYpGIgUOF6xTfzh7fHGgSjfol5uwfWpG1VoWK11MtWQeYkQj4dSpnGJkeFrRZlIWrWZtOKxusr87Khxi7Vs8O4C+lOuFhjG8cTwpQ4OlWtVTPKnQ3zysrFYJhidqWskNrl7jnFr0LByhS2pI3Q6pVzLgVWHqqlVP+fJf+PTkR62jYnrwSeKMBZR1CaVodtokKk82ir8+Ot matt.illingworth@datacentred.co.uk"
+}

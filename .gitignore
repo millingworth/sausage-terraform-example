@@ -1,0 +1,6 @@
+.tox
+.swp
+.terraform
+tmp
+venv
+terraform

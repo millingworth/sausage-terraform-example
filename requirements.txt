@@ -1,0 +1,12 @@
+flake8==3.7.7
+pre-commit==1.18.0
+python-designateclient
+python-heatclient
+python-magnumclient
+python-octaviaclient
+python-openstackclient
+requests==2.18.4
+ruamel.yaml==0.15.96
+setuptools==40.8.0
+wget
+zipfile38

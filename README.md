@@ -1,2 +1,11 @@
 # sausage-terraform-example
-Standing up a sausage with terraform
+- Install python3 + python3-pip + tox
+`sudo apt update; sudo apt -y install python3 python3-pip tox`
+- Setup virtualenv / terraform etc
+`make install`
+- Test terraform
+`source your_openstack_creds`
+`source ./venv/bin/activate`
+`make plan`
+- Deploy terraform plan
+`make apply`

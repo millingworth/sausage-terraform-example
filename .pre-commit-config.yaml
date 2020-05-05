@@ -1,0 +1,26 @@
+exclude: ^(.pyc)
+repos:
+-   repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: v1.4.4
+    hooks:
+    -   id: autopep8
+        language_version: python3.6
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.4.0
+    hooks:
+    -   id: flake8
+        language_version: python3.6
+    -   id: check-docstring-first
+        language_version: python3.6
+    -   id: check-json
+    -   id: check-merge-conflict
+    -   id: check-xml
+    -   id: check-yaml
+    -   id: debug-statements
+        language_version: python3.6
+    -   id: double-quote-string-fixer
+        language_version: python3.6
+    -   id: detect-private-key
+    -   id: end-of-file-fixer
+    -   id: requirements-txt-fixer
+    -   id: trailing-whitespace
