@@ -11,12 +11,12 @@
   - `make apply`
 
 - Notes
- - Import existing DNS zone into terraform
-  - `openstack zone list` <- Make a note of UUID
-  - `./terraform import openstack_dns_zone_v2.zone_cloud_mattillingworth_com UUID_HERE`
- - Import existing keypair into terraform
-  - `openstack keypair list` <- Make a note of the name
-  - `./terraform import openstack_compute_keypair_v2.matt_illingworth_key "Matt Illingworth"`
- - Destroying the instance
-  - The DNZ zone has the prevent_destroy = true flag which will stop a simple './terraform destroy' from working.  To remove you must target the resource:
-  - `./terraform destroy -target openstack_compute_instance_v2.example1`
+  - Import existing DNS zone into terraform
+    - `openstack zone list` <- Make a note of UUID
+    - `./terraform import openstack_dns_zone_v2.zone_cloud_mattillingworth_com UUID_HERE`
+  - Import existing keypair into terraform
+    - `openstack keypair list` <- Make a note of the name
+    - `./terraform import openstack_compute_keypair_v2.matt_illingworth_key "Matt Illingworth"`
+  - Destroying the instance
+    - The DNZ zone has the prevent_destroy = true flag which will stop a simple './terraform destroy' from working.  To remove you must target the resource:
+    - `./terraform destroy -target openstack_compute_instance_v2.example1`
