@@ -1,4 +1,5 @@
 # sausage-terraform-example
+- For this example I already had a nameserver record for the 'cloud' subdomain pointing to dns.sausage.cloud
 - Install python3 + python3-pip + tox
   - `sudo apt update; sudo apt -y install python3 python3-pip tox`
 - Setup virtualenv / terraform etc
