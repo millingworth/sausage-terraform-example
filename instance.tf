@@ -13,10 +13,10 @@ resource "openstack_compute_instance_v2" "example1" {
 }
 
 resource "openstack_dns_recordset_v2" "rs_example1" {
-  zone_id = "${openstack_dns_zone_v2.zone_sausage_systems.id}"
+  zone_id = "${openstack_dns_zone_v2.zone_cloud_mattillingworth_com.id}"
   name = "example1.cloud.mattillingworth.com."
   description = "example1 record"
   ttl = 3600
   type = "A"
-  records = ["${openstack_compute_instance_v2.meat.access_ip_v4}"]
+  records = ["${openstack_compute_instance_v2.example1.access_ip_v4}"]
 }
