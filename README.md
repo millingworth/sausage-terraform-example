@@ -17,6 +17,7 @@
   - Import existing keypair into terraform
     - `openstack keypair list` <- Make a note of the name
     - `./terraform import openstack_compute_keypair_v2.matt_illingworth_key "Matt Illingworth"`
-  - Destroying the instance
+  - Destroying the resources
     - The DNZ zone has the prevent_destroy = true flag which will stop a simple './terraform destroy' from working.  To remove you must target the resource:
     - `./terraform destroy -target openstack_compute_instance_v2.example1`
+    - `./terraform destroy -target openstack_networking_secgroup_v2.allow_admin`
