@@ -5,7 +5,7 @@
 - Setup virtualenv / terraform etc
   - `make install`
 - Test terraform
-  - `source your_openstack_creds`
+  - `source your_openstack_creds` <- Your openstack creds can be downloaded from within the GUI, top right menu > Openstack RC file.
   - `source ./venv/bin/activate`
   - `make plan`
 - Deploy terraform plan
